@@ -24,6 +24,10 @@ const Navigation = (props) => {
           Contact
         </a>
       </div>
+
+      <div className="navbar-title">
+          The Artwork of <br/> Vern Planck
+      </div>
     </nav>
     )
   }
