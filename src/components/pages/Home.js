@@ -5,7 +5,7 @@ const Home = (props) => {
     <div>
         <div className="columns">
             <div className=" column is-3">
-                <img style={{ width: 200, height: 200 }} src={require('../images/placeholder.png')}>
+                <img style={{ width: 240, height: 300 }} src={require('../images/Headshot_Babey.png')}>
                 </img>
                 <p className="bd-notification">Bakkstabbath<br/>-Vern Planck</p>
             </div>
