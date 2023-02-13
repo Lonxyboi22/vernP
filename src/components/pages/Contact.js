@@ -54,9 +54,9 @@ class ContactForm extends React.PureComponent {
 
     return (
       <form onSubmit={this.handleSubmit}>
-        <Field>
-          <Label>Name</Label>
-          <Control>
+        <Field className="contact-container">
+          <Label className="contact-labels">Name</Label>
+          <Control className="textField">
             <Input
               name="name"
               type="text"
@@ -66,21 +66,21 @@ class ContactForm extends React.PureComponent {
             />
           </Control>
         </Field>
-        <Field>
-          <Label>Email for contact</Label>
-          <Control>
+        <Field className="contact-container">
+          <Label className="contact-labels">Email</Label>
+          <Control className="textField">
             <Input
               name="email"
               type="email"
-              placeholder="email@gmail.com"
+              placeholder="email@example.com"
               value={email}
               onChange={this.handleChange}
             />
           </Control>
         </Field>
-        <Field>
-          <Label>Subject</Label>
-          <Control>
+        <Field className="contact-container">
+          <Label className="contact-labels">Subject</Label>
+          <Control className="textField">
             <Input
               name="subject"
               type="text"
@@ -90,9 +90,9 @@ class ContactForm extends React.PureComponent {
             />
           </Control>
         </Field>
-        <Field>
-          <Label>Message</Label>
-          <Control>
+        <Field className="contact-container">
+          <Label className="contact-labels">Message</Label>
+          <Control className="textField">
             <Textarea
               name="message"
               placeholder="Tell me more about..."
@@ -103,11 +103,11 @@ class ContactForm extends React.PureComponent {
         </Field>
 
         <Field kind="group">
-          <Control>
-            <Button color="dark">Send</Button>
+          <Control className='send-cancel'>
+            <Button color="light">Send</Button>
           </Control>
           <Control>
-            <Button text>Cancel</Button>
+            <Button color="danger">Cancel</Button>
           </Control>
         </Field>
       </form>

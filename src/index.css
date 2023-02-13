@@ -58,3 +58,25 @@ code {
   padding-bottom: 50px;
   flex-wrap: wrap;
 }
+
+.contact-labels {
+  display: flex;
+  width: 150px;
+}
+
+.contact-labels::before {
+  content:"* ";
+  color: red;
+}
+
+.textField {
+  display: flex;
+  width: 500px;
+  justify-content: end;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.send-cancel {
+  padding-left: 20px;
+}
