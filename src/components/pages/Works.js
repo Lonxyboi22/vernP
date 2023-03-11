@@ -26,7 +26,7 @@ const Works = (props) => {
         <Container className= "project-container">
             <Card className="project-card1">
                 <Card.Body className="card-body">
-                        <img style={{ width: 150, height: 100 }} src={require('../images/placeholder.png')}></img>
+                        <img style={{ width: 150, height: 100 }} src={require('../images/colorpalletes.png')}></img>
                 </Card.Body>
             </Card>
             <Card className="project-card2">
