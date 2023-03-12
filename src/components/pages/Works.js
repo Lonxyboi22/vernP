@@ -16,7 +16,7 @@ const Works = (props) => {
             </Card>
             <Card className="project-card3">
                 <Card.Body>
-                <img style={{ width: 300, height: 300 }} src={require('../images/2021EyeIllustration.png')}></img>                </Card.Body>
+                <img style={{ width: 300, height: 350 }} src={require('../images/2021EyeIllustration.png')}></img>                </Card.Body>
             </Card>
             <Card className="project-card4">
                 <Card.Body>
