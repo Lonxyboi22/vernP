@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import Navigation from './components/Navbar'
+import Bio from './components/pages/Bio'
 import Footer from './components/Footer'
 import Home from './components/pages/Home'
 import Works from './components/pages/Works'
@@ -21,7 +22,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>} />
             <Route path="/works" element={<Works />}  />
-            {/* <Route path="/projects" element={<Projects />}  /> */}
+            <Route path="/bio" element={<Bio />}  />
             <Route path='/contact' element={<Contact />} />
           </Routes>
         </Router>

@@ -13,6 +13,38 @@ code {
 }
 
 
+.navColor{
+  background-color: #303030;
+}
+
+.background{
+  background-color: #121212;
+}
+
+.column-background{
+  margin: 20px;
+  background-color: #303030;
+
+}
+
+.sideBar-backdrop{
+  background-color: #d986fc;
+  margin: 30px 30px 30px 30px;
+  border-radius: 20px;
+}
+
+.sideBar-backdrop2{
+  background-color: #d986fc;
+  margin: 30px 30px 30px 30px;
+  border-radius: 20px;
+}
+
+.sideBar-backdrop3{
+  background-color: #d986fc;
+  margin: 30px 30px 30px 30px;
+  border-radius: 20px;
+}
+
 .project-container {
   display: flex;
   justify-content: center;
