@@ -8,13 +8,14 @@ const Home = (props) => {
             <div className=" column is-3">
                 <img style={{ width: 240, height: 300 }} src={require('../images/Headshot_Babey.png')}>
                 </img>
-                <p className="bd-notification">Bakkstabbath<br/>-Vern Planck</p>
+                <p className="bd-notification">Back Stabbath<br/>-Vern Planck</p>
             </div>
             <div className="column is-4">
-                <p className="bd-notification">This column with more content. this is going to be used for a bio ish thing/short blurb or quote</p>
+                <p className="bd-notification">Welcome to my art portfolio page! This is to help get my artworks out into the world, check out my work in the works page. You can also visit the contact page for questions about my pieces or for commission works. Check out more of my work in my social media links. 
+                </p>
             </div>
             <div className="column">
-                <p>This is for social media links</p>
+                <p>Like what you see? <br/>Here are some of my social media links:</p>
                 <div style={{ display: "flex", justifyContent: "center" }}>
                 <ul className="footer-icons" style={{ listStyleType: "none", margin: 0, padding: 0, overflow: "hidden"}}>
                 <li className="social-icons" style={{   float: "left" }}>
