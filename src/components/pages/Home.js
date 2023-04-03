@@ -1,4 +1,5 @@
 import "bulma/css/bulma.min.css";
+import React, { Component } from 'react';
 
 const Home = (props) => {
     return (

@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import { Container, Card} from "react-bootstrap"
 
 
