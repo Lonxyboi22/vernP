@@ -1,5 +1,6 @@
 import React from 'react';
 import * as emailjs from 'emailjs-com';
+import "bulma/css/bulma.min.css";
 
 import { Field, Label, Control, Input, Button, Icon, Textarea, Notification } from 'rbx';
 
@@ -53,9 +54,9 @@ class ContactForm extends React.PureComponent {
     const { name, email, subject, message, sentMessage } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className='form-spacing has-background-black'>
         <Field className="contact-container">
-          <Label className="contact-labels">Name</Label>
+          <Label className="contact-labels has-text-grey-light">Name</Label>
           <Control className="textField">
             <Input
               name="name"
@@ -67,7 +68,7 @@ class ContactForm extends React.PureComponent {
           </Control>
         </Field>
         <Field className="contact-container">
-          <Label className="contact-labels">Email</Label>
+          <Label className="contact-labels has-text-grey-light">Email</Label>
           <Control className="textField">
             <Input
               name="email"
@@ -79,7 +80,7 @@ class ContactForm extends React.PureComponent {
           </Control>
         </Field>
         <Field className="contact-container">
-          <Label className="contact-labels">Subject</Label>
+          <Label className="contact-labels has-text-grey-light">Subject</Label>
           <Control className="textField">
             <Input
               name="subject"
@@ -91,7 +92,7 @@ class ContactForm extends React.PureComponent {
           </Control>
         </Field>
         <Field className="contact-container">
-          <Label className="contact-labels">Message</Label>
+          <Label className="contact-labels has-text-grey-light">Message</Label>
           <Control className="textField">
             <Textarea
               name="message"
@@ -102,7 +103,7 @@ class ContactForm extends React.PureComponent {
           </Control>
         </Field>
 
-        <Field kind="group">
+        <Field className='has-background-black' kind="group">
           <Control className='send-cancel'>
             <Button color="light">Send</Button>
           </Control>

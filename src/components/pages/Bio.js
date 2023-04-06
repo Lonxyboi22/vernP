@@ -3,17 +3,15 @@ import React, { Component } from 'react';
 
 const Bio = (props) => {
     return (
-    <div>
+    <div className="has-background-black">
         <div className="columns">
             <div className=" column is-3">
                 <img style={{ width: 240, height: 300 }} src={require('../images/Headshot_Babey.png')}>
                 </img>
-                <p className="bd-notification">Back Stabbath<br/>-Vern Planck</p>
+                <p className="has-text-grey-light bd-notification">Back Stabbath<br/>-Vern Planck</p>
             </div>
             <div className="column is-4">
-                <p className="bd-notification bio-text">
-                    Name: Vern Planck<br/>
-                    Location:Grand Rapids<br/>
+                <p className="has-text-grey-light bd-notification bio-text">
                     Education: KCAD, GRCC, NCMC, MSU,<br/>
                     Projects of interest: processes I.E. Surgical processes, how a piece of anatomy works, etc. as well as a variety of other services.<br/>
                     Preferred mediums: digital, ink, oil paint, graphite<br/>
