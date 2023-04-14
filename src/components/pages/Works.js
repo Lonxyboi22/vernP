@@ -4,11 +4,114 @@ import { Modal } from 'react-bootstrap';
 
 
 const Works = (props) => {
+    function switchStyle() {
+        if (document.getElementById('styleSwitch').checked) {
+          document.getElementById('gallery').classList.add("custom");
+          document.getElementById('exampleModal').classList.add("custom");
+        } else {
+          document.getElementById('gallery').classList.remove("custom");
+          document.getElementById('exampleModal').classList.remove("custom");
+        }
+      }
 
     return(
     <Container fluid className="project-section">
-        <Container className= "project-container" id='gallery' data-toggle='modal' data-target='#imageModal'>
+        <Container className= "project-container" id='gallery'>
             <Card className="project-card1">
+                <Card.Body className="card-body">
+                        <img style={{ width: 200, height: 300 }} src={require('../images/Ovary2021.png')}></img>
+                </Card.Body>
+            </Card>
+            <Card className="project-card2">
+                <Card.Body>
+                <img style={{ width: 300, height: 200 }} src={require('../images/FTMTopsurgery.png')}></img>                </Card.Body>
+            </Card>
+            <Card className="project-card3">
+                <Card.Body>
+                <img style={{ width: 300, height: 300 }} src={require('../images/2021EyeIllustration.png')}></img>                </Card.Body>
+            </Card>
+            <Card className="project-card4">
+                <Card.Body>
+                <img style={{ width: 300, height: 250 }} src={require('../images/2021FantasyFigure.png')}></img>                </Card.Body>
+            </Card>
+        </Container>
+        <Container className= "project-container">
+            <Card className="project-card1">
+                <Card.Body className="card-body">
+                        <img style={{ width: 200, height: 300 }} src={require('../images/colorpalletes.png')}></img>
+                </Card.Body>
+            </Card>
+            <Card className="project-card2">
+                <Card.Body>
+                <img style={{ width: 300, height: 200 }} src={require('../images/2020Value.png')}></img>                </Card.Body>
+            </Card>
+            <Card className="project-card3">
+                <Card.Body>
+                <img style={{ width: 300, height: 300 }} src={require('../images/2021HouseHusbands.JPG')}></img>                </Card.Body>
+            </Card>
+            <Card className="project-card4">
+                <Card.Body>
+                <img style={{ width: 300, height: 300 }} src={require('../images/BeNiceorElse.png')}></img>                </Card.Body>
+            </Card>
+        </Container>
+        <Container className= "project-container">
+            <Card className="project-card1">
+                <Card.Body className="card-body">
+                        <img style={{ width: 300, height: 300 }} src={require('../images/coyote.jpg')}></img>
+                </Card.Body>
+            </Card>
+            <Card className="project-card2">
+                <Card.Body>
+                <img style={{ width: 300, height: 300 }} src={require('../images/JordanBusinessCard.png')}></img>                </Card.Body>
+            </Card>
+            <Card className="project-card3">
+                <Card.Body>
+                <img style={{ width: 200, height: 300 }} src={require('../images/PalmarLayers.png')}></img>                </Card.Body>
+            </Card>
+            <Card className="project-card4">
+                <Card.Body>
+                <img style={{ width: 300, height: 300 }} src={require('../images/PinupGhost.png')}></img>                </Card.Body>
+            </Card>
+        </Container>
+        <Container className= "project-container">
+            <Card className="project-card1">
+                <Card.Body className="card-body">
+                        <img style={{ width: 300, height: 300 }} src={require('../images/Planesproject.png')}></img>
+                </Card.Body>
+            </Card>
+            <Card className="project-card2">
+                <Card.Body>
+                <img style={{ width: 250, height: 300 }} src={require('../images/RyansRemedies2020.png')}></img>                </Card.Body>
+            </Card>
+            <Card className="project-card3">
+                <Card.Body>
+                <img style={{ width: 250, height: 300 }} src={require('../images/SelfPortrait2020.jpg')}></img>                </Card.Body>
+            </Card>
+            <Card className="project-card4">
+                <Card.Body>
+                <img style={{ width: 300, height: 250 }} src={require('../images/Shovelincisors.png')}></img>                </Card.Body>
+            </Card>
+        </Container>
+        <Container className= "project-container">
+            <Card className="project-card1">
+                <Card.Body className="card-body">
+                        <img style={{ width: 300, height: 250 }} src={require('../images/SnesbiansSticker2020.png')}></img>
+                </Card.Body>
+            </Card>
+            <Card className="project-card2">
+                <Card.Body>
+                <img style={{ width: 250, height: 300 }} src={require('../images/speedPaint.png')}></img>                </Card.Body>
+            </Card>
+            <Card className="project-card3">
+                <Card.Body>
+                <img style={{ width: 300, height: 250 }} src={require('../images/TobiCrosshatch.jpg')}></img>                </Card.Body>
+            </Card>
+            <Card className="project-card4">
+                <Card.Body>
+                <img style={{ width: 250, height: 300 }} src={require('../images/topsurgeryRemake.png')}></img>                </Card.Body>
+            </Card>
+        </Container>
+        <Container className= "project-container" data-toggle='modal' data-target='#imageModal'>
                 <div className='modal fade' id='imageModal' tabIndex='-1' role='dialog' aria-hidden='true'>
                     <div className='modal-content'>
                         <div className="modal-header">
@@ -151,7 +254,13 @@ const Works = (props) => {
                         </div>
                     </div>
                 </div>
-            </Card>
+
+                <div className="switch-wrap">
+                    <label className="switch">
+                    <input type="checkbox" id="styleSwitch" onclick="switchStyle();" />
+                        <span className="slider round" />
+                    </label>
+                </div>
         </Container>
     </Container>
     )
